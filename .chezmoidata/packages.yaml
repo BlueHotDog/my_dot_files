@@ -1,0 +1,8 @@
+packages:
+  darwin:
+    brews:
+      - "git"
+      - "fish"
+      - "fisher"
+    casks:
+      - "google-chrome"
