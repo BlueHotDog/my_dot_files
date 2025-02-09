@@ -1,8 +1,31 @@
 packages:
   darwin:
+    taps:
+      - "1password/tap"
+      - "homebrew/bundle"
     brews:
       - "git"
       - "fish"
       - "fisher"
+      - "git-delta"
+      - "gpg"
+      - "mise"
+      - "rsync"
+      - "tmux"
+      - "wget"
+      - "terminal-notifier"
+      - "lsd"
+
+      - "lazygit"
+      - "bat"
     casks:
       - "google-chrome"
+      - "ghostty"
+      - "hammerspoon"
+      - "font-hack-nerd-font"
+      - "notion"
+      - "cursor"
+      - "zed"
+      - "raycast"
+      - "obs"
+      - "spotify"
