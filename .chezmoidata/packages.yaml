@@ -15,7 +15,7 @@ packages:
       - "wget"
       - "terminal-notifier"
       - "lsd"
-
+      - "starship"
       - "lazygit"
       - "bat"
     casks:
@@ -27,6 +27,5 @@ packages:
       - "cursor"
       - "zed"
       - "raycast"
-      - "starship"
       - "obs"
       - "spotify"
