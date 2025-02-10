@@ -1,0 +1,63 @@
+# THEME SETTINGS
+theme = nord
+bold-is-bright = true
+cursor-style = block
+
+# Merges titlebar with contents
+macos-titlebar-style = native
+macos-titlebar-style = transparent
+
+# WINDOW SETTINGS
+window-height = 55
+window-width = 150
+window-padding-x = 12
+window-padding-y = 10
+window-padding-balance = false
+window-padding-color = extend
+window-inherit-working-directory = false
+
+# Add some nice looking padding
+window-padding-x = 8
+window-padding-y = 0,2
+
+# Don't hang around
+quit-after-last-window-closed = true
+
+# Fixes issues with Ctrl-R
+term = xterm-256color
+
+# The theme I liked the most from the `ghostty +list-themes`
+theme = Monokai Remastered
+
+keybind = global:cmd+grave_accent=toggle_quick_terminal
+
+
+# FONT SETTINGS
+font-size = 15
+font-family = FiraCode Nerd Font Mono
+font-thicken = true
+font-feature = +liga
+adjust-cell-width = -3%
+adjust-cell-height = -5%
+
+# CLIPBOARD INTEGRATIONS
+clipboard-read = allow
+clipboard-write = allow
+clipboard-trim-trailing-spaces = true
+clipboard-paste-protection = false
+
+# SPLITS
+unfocused-split-opacity = 0.5
+
+# QUICK TERMINAL
+quick-terminal-position = top
+
+# OTHER
+cursor-click-to-move = true
+confirm-close-surface = false
+link-url = true
+macos-titlebar-style = tabs
+
+
+# SHELL INTEGRATION
+shell-integration-features = true

@@ -27,5 +27,6 @@ packages:
       - "cursor"
       - "zed"
       - "raycast"
+      - "starship"
       - "obs"
       - "spotify"
