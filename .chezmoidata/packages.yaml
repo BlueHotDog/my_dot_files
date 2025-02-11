@@ -18,6 +18,8 @@ packages:
       - "starship"
       - "lazygit"
       - "bat"
+      - "docker"
+      - "docker-compose"
     casks:
       - "google-chrome"
       - "ghostty"
@@ -29,3 +31,7 @@ packages:
       - "raycast"
       - "obs"
       - "spotify"
+      - "zoom"
+      - "karabiner-elements"
+      - "discord"
+      
