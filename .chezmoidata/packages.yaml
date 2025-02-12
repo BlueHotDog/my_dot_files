@@ -24,6 +24,7 @@ packages:
       - "google-chrome"
       - "ghostty"
       - "hammerspoon"
+      - "transmission"
       - "font-hack-nerd-font"
       - "notion"
       - "cursor"
