@@ -30,8 +30,10 @@ packages:
       - "zed"
       - "raycast"
       - "obs"
+      - "todoist"
+      - "obsidian"
+      - "google-drive"
       - "spotify"
       - "zoom"
       - "karabiner-elements"
       - "discord"
-      
