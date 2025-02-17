@@ -1,0 +1,26 @@
+if status is-interactive
+    {{- if lookPath "/opt/homebrew/bin/brew" }}
+        eval (/opt/homebrew/bin/brew shellenv)
+    {{- end }}
+
+    if type -q mise
+        {{ lookPath "mise" }} activate fish | source
+    end
+
+    if type -q thefuck
+        {{ lookPath "thefuck" }} --alias | source
+    end
+
+    if type -q starship
+        {{ lookPath "starship" }} init fish | source
+    end
+
+    set fish_tmux_autostart true
+
+# Set greeting to neofetch
+    function fish_greeting
+        fastfetch
+    end
+end
+
+
