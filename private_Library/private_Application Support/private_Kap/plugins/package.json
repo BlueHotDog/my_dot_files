@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "kap-camera": "latest",
+    "kap-do-not-disturb": "latest",
+    "kap-recording-name": "latest",
+    "kap-recording-time": "latest"
+  }
+}
