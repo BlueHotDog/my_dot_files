@@ -35,7 +35,6 @@ packages:
       - "cursor"
       - "zed"
       - "raycast"
-      - "obs"
       - "todoist"
       - "obsidian"
       - "google-drive"
@@ -43,3 +42,4 @@ packages:
       - "zoom"
       - "karabiner-elements"
       - "discord"
+      - "kap"
