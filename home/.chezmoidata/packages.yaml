@@ -25,6 +25,7 @@ packages:
       - "nnn"
       - "portal"
       - "glow"
+      - "difftastic"
     casks:
       - "google-chrome"
       - "ghostty"
