@@ -1,0 +1,284 @@
+{
+    "scss.validate": false,
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "explorer.confirmDelete": false,
+    "less.validate": false,
+    "[html]": {
+        "editor.defaultFormatter": "vscode.html-language-features"
+    },
+    "[rescript]": {
+        "rescript.settings.allowBuiltInFormatter": true,
+        "editor.defaultFormatter": "chenglou92.rescript-vscode"
+    },
+    "css.validate": false,
+    "editor.fontLigatures": false,
+    "workbench.editor.enablePreviewFromQuickOpen": false,
+    "editor.minimap.enabled": false,
+    "workbench.iconTheme": "symbols",
+    "editor.renderControlCharacters": true,
+    "editor.lineHeight": 20,
+    "reason_language_server.reloadOnChange": true,
+    "editor.formatOnSave": true,
+    "todo-tree.filtering.ignoreGitSubmodules": true,
+    "bracketPairColorizer.showHorizontalScopeLine": false,
+    "reason_language_server.format_width": 120,
+    "git.autofetch": true,
+    "prettier.printWidth": 120,
+    "github.preferedMergeMethod": "rebase",
+    "[scss]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "todo-tree.general.enableFileWatcher": true,
+    "vsicons.dontShowNewVersionMessage": true,
+    "editor.fontWeight": "normal",
+    "toggleexcludedfiles.outputLevel": "errors",
+    "bracketPairColorizer.showVerticalScopeLine": false,
+    "stylelint.validate": [
+        "css",
+        "scss"
+    ],
+    "editor.multiCursorModifier": "alt",
+    "[json]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "[css]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "workbench.startupEditor": "newUntitledFile",
+    "editor.fontFamily": "JetBrains Mono",
+    "sync.gist": "6ef65c9c33e0c09a28e54f53f6ae7780",
+    "editor.letterSpacing": 1,
+    "elixirLS.trace.server": "messages",
+    "liveshare.audio.joinCallBehavior": "accept",
+    "files.exclude": {
+        "**/*.bs.js": false,
+        "**/build": false,
+        "**/dist": false,
+        "**/node_modules": false
+    },
+    "files.autoSave": "afterDelay",
+    "sass.format.convert": false,
+    "gitlab.removeSourceBranch": true,
+    "reason_language_server.build_system_override_by_root": {},
+    "stylelint.enable": true,
+    "editor.fontSize": 14,
+    "editor.accessibilitySupport": "off",
+    "[yaml]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "task.problemMatchers.neverPrompt": {
+        "shell": true
+    },
+    "editor.inlineSuggest.enabled": true,
+    "github.copilot.enable": {
+        "*": true,
+        "plaintext": true,
+        "markdown": false,
+        "scminput": false,
+        "yaml": true
+    },
+    "liveshare.presence": true,
+    "redhat.telemetry.enabled": false,
+    "terminal.integrated.defaultProfile.linux": "zsh",
+    "peacock.favoriteColors": [
+        {
+            "name": "Angular Red",
+            "value": "#dd0531"
+        },
+        {
+            "name": "Azure Blue",
+            "value": "#007fff"
+        },
+        {
+            "name": "JavaScript Yellow",
+            "value": "#f9e64f"
+        },
+        {
+            "name": "Mandalorian Blue",
+            "value": "#1857a4"
+        },
+        {
+            "name": "Node Green",
+            "value": "#215732"
+        },
+        {
+            "name": "React Blue",
+            "value": "#61dafb"
+        },
+        {
+            "name": "Something Different",
+            "value": "#832561"
+        },
+        {
+            "name": "Svelte Orange",
+            "value": "#ff3d00"
+        },
+        {
+            "name": "Vue Green",
+            "value": "#42b883"
+        },
+        {
+            "name": "walnut",
+            "value": "#6E1DF4"
+        }
+    ],
+    "rust-analyzer.diagnostics.experimental.enable": true,
+    "rust-analyzer.lens.references.adt.enable": true,
+    "rust-analyzer.lens.references.enumVariant.enable": true,
+    "rust-analyzer.lens.references.method.enable": true,
+    "rust-analyzer.lens.references.trait.enable": true,
+    "rust-analyzer.inlayHints.closingBraceHints.enable": false,
+    "rust-analyzer.inlayHints.chainingHints.enable": false,
+    "rust-analyzer.inlayHints.lifetimeElisionHints.enable": "skip_trivial",
+    "rust-analyzer.inlayHints.typeHints.enable": false,
+    "vsicons.presets.jsOfficial": true,
+    "githubPullRequests.pullBranch": "never",
+    "editor.stickyScroll.enabled": true,
+    "zls.path": "/Users/dannif/Library/Application Support/Code/User/globalStorage/augusterame.zls-vscode/zls_install/zls",
+    "git.ignoredRepositories": [
+        "/Users/danni/.vscode/extensions/stepsize.stepsize-1.0.5/resources/demo-repository"
+    ],
+    "[zig]": {},
+    "security.workspace.trust.untrustedFiles": "open",
+    "[python]": {
+        "editor.formatOnType": true
+    },
+    "zig.zls.path": "/Users/danni/Library/Application Support/Code/User/globalStorage/ziglang.vscode-zig/zls_install/zls",
+    "[javascriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "zig.zigPath": "/Users/danni/.asdf/shims/zig",
+    "[astro]": {
+        "editor.defaultFormatter": "astro-build.astro-vscode"
+    },
+    "zig.zigVersion": "0.11.0",
+    "rescript.settings.inlayHints.enable": true,
+    "rescript.settings.codeLens": true,
+    "rescript.settings.binaryPath": "",
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "editor.inlineSuggest.suppressSuggestions": true,
+    "python.autoComplete.extraPaths": [
+        "/Users/danni/.vscode/extensions/continue.continue-0.6.15-darwin-arm64",
+        "/Users/danni/.vscode/extensions/continue.continue-0.7.54-darwin-arm64",
+        "/Users/danni/.vscode/extensions/continue.continue-0.7.55-darwin-arm64",
+        "/Users/danni/.vscode/extensions/continue.continue-0.7.58-darwin-arm64"
+    ],
+    "workbench.settings.applyToAllProfiles": [
+        "elixirLS.projectDir"
+    ],
+    "elixirLS.enableTestLenses": true,
+    "koka.languageServer.compiler": "/usr/local/bin/koka",
+    "python.analysis.extraPaths": [
+        "/Users/danni/.vscode/extensions/continue.continue-0.6.15-darwin-arm64",
+        "/Users/danni/.vscode/extensions/continue.continue-0.7.54-darwin-arm64",
+        "/Users/danni/.vscode/extensions/continue.continue-0.7.55-darwin-arm64",
+        "/Users/danni/.vscode/extensions/continue.continue-0.7.58-darwin-arm64"
+    ],
+    "[jsonc]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "elixirLS.mixEnv": "dev",
+    "rescript.settings.allowBuiltInFormatter": true,
+    "cursor.cpp.disabledLanguages": [
+        "markdown",
+        "scminput"
+    ],
+    "cursor.chat.smoothStreaming": true,
+    "cursor.chat.showSuggestedFiles": true,
+    "cursor.cmdk.useThemedDiffBackground": true,
+    "workbench.editor.enablePreview": false,
+    "[elixir]": {
+        "editor.defaultFormatter": "JakeBecker.elixir-ls"
+    },
+    "workbench.colorTheme": "Vim Deep Dark",
+    "cursor.general.gitGraphIndexing": "enabled",
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "cursor.cmdk.autoSelect": false,
+    "vim.easymotion": true,
+    "vim.useSystemClipboard": true,
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": [
+                "<space>"
+            ],
+            "commands": [
+                "whichkey.show"
+            ]
+        },
+        {
+            "before": [
+                "<space>"
+            ],
+            "commands": [
+                "vspacecode.space"
+            ]
+        },
+        {
+            "before": [
+                ","
+            ],
+            "commands": [
+                "vspacecode.space",
+                {
+                    "command": "whichkey.triggerKey",
+                    "args": "m"
+                }
+            ]
+        }
+    ],
+    "vim.visualModeKeyBindingsNonRecursive": [
+        {
+            "before": [
+                "<space>"
+            ],
+            "commands": [
+                "whichkey.show"
+            ]
+        },
+        {
+            "before": [
+                "<space>"
+            ],
+            "commands": [
+                "vspacecode.space"
+            ]
+        },
+        {
+            "before": [
+                ","
+            ],
+            "commands": [
+                "vspacecode.space",
+                {
+                    "command": "whichkey.triggerKey",
+                    "args": "m"
+                }
+            ]
+        },
+        {
+            "before": [
+                ">"
+            ],
+            "commands": [
+                "editor.action.indentLines"
+            ]
+        },
+        {
+            "before": [
+                "<"
+            ],
+            "commands": [
+                "editor.action.outdentLines"
+            ]
+        }
+    ],
+    "window.newWindowProfile": "Default"
+}
