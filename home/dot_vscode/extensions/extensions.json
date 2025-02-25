@@ -1,0 +1,13 @@
+{
+  "recommendations": [
+    "harryhopkinson.vim-theme",
+    "jacobdufault.fuzzy-search",
+    "kahole.magit",
+    "ms-vscode.makefile-tools",
+    "peterschmalfeldt.explorer-exclude",
+    "usernamehw.errorlens",
+    "vscodevim.vim",
+    "vspacecode.vspacecode",
+    "vspacecode.whichkey"
+  ]
+}
