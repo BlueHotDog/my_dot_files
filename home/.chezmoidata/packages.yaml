@@ -32,6 +32,7 @@ packages:
       - "hammerspoon"
       - "transmission"
       - "font-hack-nerd-font"
+      - "tailscale"
       - "notion"
       - "cursor"
       - "zed"
