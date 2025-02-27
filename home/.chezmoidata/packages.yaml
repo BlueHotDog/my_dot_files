@@ -26,6 +26,7 @@ packages:
       - "portal"
       - "glow"
       - "difftastic"
+      - "spotify_player"
     casks:
       - "google-chrome"
       - "ghostty"
