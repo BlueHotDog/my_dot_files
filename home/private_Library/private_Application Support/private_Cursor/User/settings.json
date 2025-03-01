@@ -288,7 +288,116 @@
             "name": "Show Editors in Group",
             "type": "command",
             "command": "workbench.action.showEditorsInActiveGroup",
+        },
+        {
+            "keys": "b.1",
+            "name": "Move buffer to 1st window",
+            "type": "command",
+            "command": "moveActiveEditor",
+            "args": {
+                "to": "position",
+                "by": "group",
+                "value": 1
+            },
+            "icon": "move"
+        },
+        {
+            "keys": "b.2",
+            "name": "Move buffer to 2nd window",
+            "type": "command",
+            "command": "moveActiveEditor",
+            "args": {
+                "to": "position",
+                "by": "group",
+                "value": 2
+            },
+            "icon": "move"
+        },
+        {
+            "keys": "b.3",
+            "name": "Move buffer to 3rd window",
+            "type": "command",
+            "command": "moveActiveEditor",
+            "args": {
+                "to": "position",
+                "by": "group",
+                "value": 3
+            },
+            "icon": "move"
+        },
+        {
+            "keys": "b.4",
+            "name": "Move buffer to 4th window",
+            "type": "command",
+            "command": "moveActiveEditor",
+            "args": {
+                "to": "position",
+                "by": "group",
+                "value": 4
+            },
+            "icon": "move"
+        },
+        {
+            "keys": "b.5",
+            "name": "Move buffer to 5th window",
+            "type": "command",
+            "command": "moveActiveEditor",
+            "args": {
+                "to": "position",
+                "by": "group",
+                "value": 5
+            },
+            "icon": "move"
+        },
+        {
+            "keys": "b.6",
+            "name": "Move buffer to 6th window",
+            "type": "command",
+            "command": "moveActiveEditor",
+            "args": {
+                "to": "position",
+                "by": "group",
+                "value": 6
+            },
+            "icon": "move"
+        },
+        {
+            "keys": "b.7",
+            "name": "Move buffer to 7th window",
+            "type": "command",
+            "command": "moveActiveEditor",
+            "args": {
+                "to": "position",
+                "by": "group",
+                "value": 7
+            },
+            "icon": "move"
+        },
+        {
+            "keys": "b.8",
+            "name": "Move buffer to 8th window",
+            "type": "command",
+            "command": "moveActiveEditor",
+            "args": {
+                "to": "position",
+                "by": "group",
+                "value": 8
+            },
+            "icon": "move"
+        },
+        {
+            "keys": "b.9",
+            "name": "Move buffer to 9th window",
+            "type": "command",
+            "command": "moveActiveEditor",
+            "args": {
+                "to": "position",
+                "by": "group",
+                "value": 9
+            },
+            "icon": "move"
         }
     ],
+    "editor.bracketPairColorization.enabled": true,
     "window.newWindowProfile": "Default"
 }
