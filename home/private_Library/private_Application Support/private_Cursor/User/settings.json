@@ -206,6 +206,7 @@
     "cursor.cmdk.autoSelect": false,
     "vim.easymotion": true,
     "vim.useSystemClipboard": true,
+    "workbench.activityBar.orientation": "vertical",
     "vim.normalModeKeyBindingsNonRecursive": [
         {
             "before": [
