@@ -1,6 +1,0 @@
-{
-	"nameTemplate": "{date} at {time} - {color} {animal}",
-	"dateFormat": "YYYY-MM-DD",
-	"timeFormat": "H.mm.ss",
-	"randomWordStyle": "capital"
-}

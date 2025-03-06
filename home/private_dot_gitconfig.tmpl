@@ -1,9 +1,18 @@
+[column]
+	ui = auto
+	
+[branch]
+	sort = -committerdate
+[tag]
+	sort = version:refname
+
 [gpg]
 	format = ssh
 [gpg "ssh"]
 	program = /Applications/1Password.app/Contents/MacOS/op-ssh-sign
 [commit]
 	gpgsign = true
+	verbose = true
 [user]
 	signingkey = {{onepasswordRead "op://on3lqhpr3zai4zxf33vf2p2fei/gpf2z2vmerbomkdoypzfltzkti/public_key"}}
 	name = Danni Friedland
@@ -17,15 +26,35 @@
 	smudge = git-lfs smudge -- %f   
 	process = git-lfs filter-process
 	required = true
+[pull]
+	rebase = true
 [push]
 	autoSetupRemote = true
+	default = simple
+	followTags = true
+[fetch]
+	prune = true
+	pruneTags = true
+	all = true
+[rerere]
+	enabled = true
+	autoUpdate = true
 
-# `git dft` is less to type than `git difftool`.
+[core]
+	excludesfile = ~/.gitignore
+[rebase]
+	autosquash = true
+	autoStash = true
+	updateRefs = true
 [alias]
         dft = difftool
         dlog = "!f() { GIT_EXTERNAL_DIFF=difft git log -p --ext-diff $@; }; f"
 [diff]
         tool = difftastic
+		algorithm = histogram
+		colorMoved = plain
+		mnemonicPrefix = true
+		renames = true
 [difftool]
         prompt = false
 [difftool "difftastic"]

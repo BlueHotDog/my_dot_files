@@ -1,0 +1,1 @@
+osascript ~/scripts/setup_blackhole.scpt
