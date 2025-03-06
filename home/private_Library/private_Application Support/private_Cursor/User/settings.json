@@ -139,20 +139,14 @@
     "vsicons.presets.jsOfficial": true,
     "githubPullRequests.pullBranch": "never",
     "editor.stickyScroll.enabled": true,
-    "zls.path": "/Users/dannif/Library/Application Support/Code/User/globalStorage/augusterame.zls-vscode/zls_install/zls",
-    "git.ignoredRepositories": [
-        "/Users/danni/.vscode/extensions/stepsize.stepsize-1.0.5/resources/demo-repository"
-    ],
-    "[zig]": {},
     "security.workspace.trust.untrustedFiles": "open",
     "[python]": {
         "editor.formatOnType": true
     },
-    "zig.zls.path": "/Users/danni/Library/Application Support/Code/User/globalStorage/ziglang.vscode-zig/zls_install/zls",
     "[javascriptreact]": {
         "editor.defaultFormatter": "biomejs.biome"
     },
-    "zig.zigPath": "/Users/danni/.asdf/shims/zig",
+    "zig.zigPath": "~/.asdf/shims/zig",
     "[astro]": {
         "editor.defaultFormatter": "astro-build.astro-vscode"
     },
@@ -167,23 +161,11 @@
         "editor.defaultFormatter": "biomejs.biome"
     },
     "editor.inlineSuggest.suppressSuggestions": true,
-    "python.autoComplete.extraPaths": [
-        "/Users/danni/.vscode/extensions/continue.continue-0.6.15-darwin-arm64",
-        "/Users/danni/.vscode/extensions/continue.continue-0.7.54-darwin-arm64",
-        "/Users/danni/.vscode/extensions/continue.continue-0.7.55-darwin-arm64",
-        "/Users/danni/.vscode/extensions/continue.continue-0.7.58-darwin-arm64"
-    ],
     "workbench.settings.applyToAllProfiles": [
         "elixirLS.projectDir"
     ],
     "elixirLS.enableTestLenses": true,
     "koka.languageServer.compiler": "/usr/local/bin/koka",
-    "python.analysis.extraPaths": [
-        "/Users/danni/.vscode/extensions/continue.continue-0.6.15-darwin-arm64",
-        "/Users/danni/.vscode/extensions/continue.continue-0.7.54-darwin-arm64",
-        "/Users/danni/.vscode/extensions/continue.continue-0.7.55-darwin-arm64",
-        "/Users/danni/.vscode/extensions/continue.continue-0.7.58-darwin-arm64"
-    ],
     "[jsonc]": {
         "editor.defaultFormatter": "vscode.json-language-features"
     },
@@ -206,6 +188,7 @@
     "cursor.cmdk.autoSelect": false,
     "vim.easymotion": true,
     "vim.useSystemClipboard": true,
+    "zenMode.hideTabs": true,
     "workbench.activityBar.orientation": "vertical",
     "vim.normalModeKeyBindingsNonRecursive": [
         {
