@@ -15,6 +15,10 @@ if status is-interactive
         {{ lookPath "starship" }} init fish | source
     end
 
+    if type -q zoxide
+        {{ lookPath "zoxide" }} init fish | source
+    end
+
     set fish_tmux_autostart true
 
 # Set greeting to neofetch

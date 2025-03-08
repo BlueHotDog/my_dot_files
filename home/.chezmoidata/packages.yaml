@@ -27,6 +27,8 @@ packages:
       - "portal"
       - "glow"
       - "difftastic"
+      - "fzf"
+      - "zoxide"
     casks:
       - "google-chrome"
       - "ghostty"
