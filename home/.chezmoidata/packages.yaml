@@ -23,7 +23,6 @@ packages:
       - "fastfetch"
       - "glances"
       - "nnn"
-      - "blackhole-16ch"
       - "portal"
       - "glow"
       - "difftastic"
@@ -33,6 +32,7 @@ packages:
       - "cmake"
     casks:
       - "google-chrome"
+      - "blackhole-16ch"
       - "ghostty"
       - "hammerspoon"
       - "transmission"
