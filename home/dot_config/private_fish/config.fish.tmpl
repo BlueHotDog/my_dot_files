@@ -8,7 +8,7 @@ if status is-interactive
     end
 
     if type -q thefuck
-        {{ lookPath "thefuck" }} --alias | source
+        thefuck --alias | source
     end
 
     if type -q starship
@@ -16,7 +16,7 @@ if status is-interactive
     end
 
     if type -q zoxide
-        {{ lookPath "zoxide" }} init fish | source
+        zoxide init fish | source
     end
 
     set fish_tmux_autostart true
