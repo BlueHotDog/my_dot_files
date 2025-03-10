@@ -29,6 +29,8 @@ packages:
       - "difftastic"
       - "fzf"
       - "zoxide"
+      - "ffmpeg"
+      - "cmake"
     casks:
       - "google-chrome"
       - "ghostty"
