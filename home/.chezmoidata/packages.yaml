@@ -27,6 +27,7 @@ packages:
       - "glow"
       - "difftastic"
       - "fzf"
+      - "sesh"
       - "zoxide"
       - "ffmpeg"
       - "cmake"
