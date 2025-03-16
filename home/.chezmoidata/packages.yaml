@@ -40,6 +40,8 @@ packages:
       - "font-hack-nerd-font"
       - "obs"
       - "tailscale"
+      - "slack"
+      - "whatsapp"
       - "notion"
       - "cursor"
       - "zed"
