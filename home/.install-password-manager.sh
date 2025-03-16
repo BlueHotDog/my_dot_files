@@ -4,7 +4,7 @@ set -ex
 
 case "$(uname -s)" in
 Darwin)
-    if [ ! -d "$DIRECTORY" ]; then
+    if [ ! -d "/Applications/1Password.app" ]; then
       brew install --cask 1password
     fi
     
