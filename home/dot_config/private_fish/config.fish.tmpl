@@ -4,7 +4,7 @@ if status is-interactive
     {{- end }}
 
     if type -q mise
-        {{ lookPath "mise" }} activate fish | source
+        mise activate fish | source
     end
 
     if type -q thefuck
@@ -12,7 +12,7 @@ if status is-interactive
     end
 
     if type -q starship
-        {{ lookPath "starship" }} init fish | source
+        starship init fish | source
     end
 
     if type -q zoxide
