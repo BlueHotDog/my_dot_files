@@ -1,5 +1,4 @@
 # THEME SETTINGS
-theme = nord
 bold-is-bright = true
 cursor-style = block
 
@@ -21,7 +20,7 @@ window-padding-x = 8
 window-padding-y = 0,2
 
 # Don't hang around
-quit-after-last-window-closed = true
+quit-after-last-window-closed = false
 
 # Fixes issues with Ctrl-R
 term = xterm-256color
