@@ -27,9 +27,6 @@ left = ["mode", "spinner"]
 center = ["file-name"]
 right = ["diagnostics", "version-control", "selections", "position", "file-encoding", "file-line-ending", "file-type"]
 
-[keys.normal]
-C-y = ":sh tmux new-window -n fx '~/.config/helix/yazi-picker.sh open'"
-
 [keys.normal.C-y]
 # Open file(s) in the current window
 y = ":sh tmux new-window -n fx '~/.config/helix/yazi-picker.sh open'"
