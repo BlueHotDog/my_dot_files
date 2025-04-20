@@ -55,6 +55,7 @@ quick-terminal-space-behavior =  move
 
 # OTHER
 cursor-click-to-move = true
+macos-option-as-alt = true
 confirm-close-surface = false
 link-url = true
 macos-titlebar-style = tabs
