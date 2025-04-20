@@ -1,0 +1,39 @@
+theme = "zed_onedark"
+
+[editor]
+bufferline = "multiple"
+cursorline = true
+end-of-line-diagnostics = "hint"
+clipboard-provider = "pasteboard"
+true-color = true
+mouse = true 
+rulers = [120]
+color-modes = true
+
+[editor.auto-save]
+focus-lost = true
+after-delay.enable = true
+
+
+[editor.cursor-shape]
+insert = "bar"
+
+[editor.indent-guides]
+render = true
+character = "▎" 
+
+[editor.statusline]
+left = ["mode", "spinner"]
+center = ["file-name"]
+right = ["diagnostics", "version-control", "selections", "position", "file-encoding", "file-line-ending", "file-type"]
+
+[keys.normal]
+C-y = ":sh tmux new-window -n fx '~/.config/helix/yazi-picker.sh open'"
+
+[keys.normal.C-y]
+# Open file(s) in the current window
+y = ":sh tmux new-window -n fx '~/.config/helix/yazi-picker.sh open'"
+# Open file(s) in a vertical split
+v = ":sh tmux new-window -n fx '~/.config/helix/yazi-picker.sh vsplit'"
+# Open file(s) in a horizontal split
+h = ":sh tmux new-window -n fx '~/.config/helix/yazi-picker.sh hsplit'"
