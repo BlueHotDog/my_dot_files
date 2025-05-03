@@ -31,7 +31,8 @@ packages:
       - "ffmpeg"
       - "cmake"
       - "yazi"
-      - "markdown-oxide
+      - "markdown-oxide"
+      - "gh"
     casks:
       - "google-chrome"
       - "ghostty"
