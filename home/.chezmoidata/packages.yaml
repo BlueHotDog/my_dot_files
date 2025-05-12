@@ -31,8 +31,8 @@ packages:
       - "ffmpeg"
       - "cmake"
       - "yazi"
-      - "markdown-oxide"
-      - "gh"
+      - "markdown-oxide" #markdown lsp
+      - "taplo" #toml lsp
     casks:
       - "google-chrome"
       - "ghostty"
