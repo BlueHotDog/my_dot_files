@@ -1,4 +1,4 @@
-theme = "zed_onedark"
+theme = "dark_plus"
 
 [editor]
 bufferline = "multiple"
@@ -10,27 +10,99 @@ mouse = true
 rulers = [120]
 color-modes = true
 
+[editor.soft-wrap]
+enable = true
+
 [editor.auto-save]
 focus-lost = true
 after-delay.enable = true
 
+[editor.lsp]
+auto-signature-help = false
 
 [editor.cursor-shape]
 insert = "bar"
+normal = "block"
+select = "underline"
+
+[editor.inline-diagnostics]
+cursor-line = "error"
 
 [editor.indent-guides]
 render = true
-character = "▎" 
+character = "┊" 
+
+[editor.file-picker]
+hidden = false
 
 [editor.statusline]
-left = ["mode", "spinner"]
-center = ["file-name"]
-right = ["diagnostics", "version-control", "selections", "position", "file-encoding", "file-line-ending", "file-type"]
+left = [
+  "mode",
+  "spinner",
+  "diagnostics",
+  "spacer",
+  "version-control"
+]
+center = [
+  "file-name",
+  "read-only-indicator",
+  "file-modification-indicator"
+]
+right = [
+  "register",
+  "selections",
+  "position",
+  "position-percentage",
+  "file-encoding",
+  "file-line-ending",
+  "file-type"
+]
 
-[keys.normal.C-y]
-# Open file(s) in the current window
-y = ":sh tmux new-window -n fx '~/.config/helix/yazi-picker.sh open'"
-# Open file(s) in a vertical split
-v = ":sh tmux new-window -n fx '~/.config/helix/yazi-picker.sh vsplit'"
-# Open file(s) in a horizontal split
-h = ":sh tmux new-window -n fx '~/.config/helix/yazi-picker.sh hsplit'"
+
+[keys.normal]
+C-s = ":w"
+esc = ["collapse_selection", "keep_primary_selection", ":w"]
+"H" = "move_prev_sub_word_start"
+"L" = "move_next_sub_word_start"
+S-tab    = [":bp"]
+tab      = [":bn"]
+C-k      = ["extend_to_line_bounds","delete_selection", "move_line_up","paste_before"]
+C-j      = ["extend_to_line_bounds","delete_selection", "move_line_down","paste_before"]
+"A-s" = "signature_help" # Alt+s for signature help
+
+
+[keys.normal.space]
+"." = "code_action"
+
+[keys.normal.g]
+q = ":bc"
+Q = ":bc!"
+
+[keys.normal."backspace"] # backspace seems unused in normal mode.., and it's a big button! :)
+s = ":write"
+S = ":write!"
+c = [":bc"]
+C = [":bc!"]
+q = ":quit"
+Q = ":quit!"
+r = ":reload"
+R = ":reload-all"
+f = ":format"
+
+[keys.insert]
+"A-s" = "signature_help" # Alt+s for signature help# [keys.normal.space]
+
+# e = [
+#   ":sh rm -f /tmp/unique-file-h21a434",
+#   ":insert-output yazi '%{buffer_name}' --chooser-file=/tmp/unique-file-h21a434",
+#   ":insert-output echo \"x1b[?1049h\" > /dev/tty",
+#   ":open %sh{cat /tmp/unique-file-h21a434}",
+#   ":redraw",
+# ]
+# E = [
+#   ":sh rm -f /tmp/unique-file-u41ae14",
+#   ":insert-output yazi '%{workspace_directory}' --chooser-file=/tmp/unique-file-u41ae14",
+#   ":insert-output echo \"x1b[?1049h\" > /dev/tty",
+#   ":open %sh{cat /tmp/unique-file-u41ae14}",
+#   ":redraw",
+# ]

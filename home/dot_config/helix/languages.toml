@@ -2,11 +2,26 @@
 name = "python"
 language-servers = ["pyright", "ruff"]
 auto-format = true
-[language-server.pyright.config.python.analysis]
-typeCheckingMode = "basic"
+roots = ["pyproject.toml", "setup.py", "poetry.lock", "pyrightconfig.json", "requirements.txt"]
+
+[language-server.pyright]
+command = "pyright-langserver"
+args = ["--stdio"]
+
 [language-server.ruff]
 command = "ruff"
 args = ["server"]
-[language-server.pylyzer]
-command = "pylyzer"
-args = ["--server"]
+
+[language-server.pyright.config]
+python.analysis.lint = true
+python.analysis.inlayHint.enable = true
+python.analysis.autoSearchPaths = true
+python.analysis.diagnosticMode = "workspace"
+python.analysis.useLibraryCodeForType = true
+python.analysis.logLevel = "Error"
+python.analysis.typeCheckingMode = "basic"
+python.analysis.autoImportCompletion = true
+
+[language.formatter]
+command = "ruff"
+args = ["format", "-"]
