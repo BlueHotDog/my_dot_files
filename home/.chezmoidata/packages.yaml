@@ -33,6 +33,7 @@ packages:
       - "yazi"
       - "markdown-oxide" #markdown lsp
       - "taplo" #toml lsp
+      - "elixir-ls" #Elixir LS
     casks:
       - "google-chrome"
       - "ghostty"
