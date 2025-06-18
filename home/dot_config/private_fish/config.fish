@@ -1,7 +1,5 @@
 if status is-interactive
-    {{- if lookPath "/opt/homebrew/bin/brew" }}
-        eval (/opt/homebrew/bin/brew shellenv)
-    {{- end }}
+    eval (/opt/homebrew/bin/brew shellenv)
 
     if type -q mise
         mise activate fish | source
@@ -21,12 +19,16 @@ if status is-interactive
 
     set fish_tmux_autostart true
 
-# Set greeting to neofetch
+    # Set greeting to neofetch
     function fish_greeting
         fastfetch
     end
 end
-
+set -Ux EDITOR hx
 # Added by OrbStack: command-line tools and integration
 # This won't be added again if you remove it.
 source ~/.orbstack/shell/init2.fish 2>/dev/null || :
+
+# Created by `pipx` on 2025-03-23 13:09:29
+set -gx PATH $PATH /Users/danni/.local/bin
+set -gx COMPOSE_X_NO_UI 1
