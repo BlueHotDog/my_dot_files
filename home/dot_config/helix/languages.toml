@@ -1,8 +1,12 @@
-[[language]]
-name = "python"
-language-servers = ["pyright", "ruff"]
-auto-format = true
-roots = ["pyproject.toml", "setup.py", "poetry.lock", "pyrightconfig.json", "requirements.txt"]
+[language-server.biome]
+command = "biome" 
+args = ["lsp-proxy"]
+config = { provideFormatter = true }
+display-messages = true
+required-root-patterns = ["*.ts", "*.tsx", "*.js", "*.jsx", "*.mts", "package.json", "tsconfig.*"]
+
+[language-server.json]
+command = "vscode-json-languageserver"
 
 [language-server.pyright]
 command = "pyright-langserver"
@@ -22,6 +26,60 @@ python.analysis.logLevel = "Error"
 python.analysis.typeCheckingMode = "basic"
 python.analysis.autoImportCompletion = true
 
-[language.formatter]
-command = "ruff"
-args = ["format", "-"]
+# [language.formatter]
+# command = "ruff"
+# args = ["format", "-"]
+
+[[language]]
+name = "elixir"
+scope = "source.elixir"
+injection-regex = "elixir"
+roots = ["mix.exs"]
+auto-format = true
+
+[[language]]
+name = "python"
+language-servers = ["pyright", "ruff"]
+auto-format = true
+roots = ["pyproject.toml", "setup.py", "poetry.lock", "pyrightconfig.json", "requirements.txt"]
+
+[[language]]
+name = "javascript"
+language-servers = [ { name = "typescript-language-server", except-features = [ "format" ] }, "biome" ]
+auto-format = true
+
+[[language]]
+name="typescript"
+language-servers = [ { name = "typescript-language-server", except-features = [ "format" ] }, "biome", "emmet-ls"]
+auto-format = true
+roots = ["package.json"]
+formatter = { command = "biome", args = [
+  "format",
+  "--stdin-file-path=prd.ts",
+] }
+[[language]]
+name = "tsx"
+auto-format = true
+language-servers = [ { name = "typescript-language-server", except-features = [ "format" ] }, "biome" ]
+
+[[language]]
+name = "jsx"
+auto-format = true
+language-servers = [ { name = "typescript-language-server", except-features = [ "format" ] }, "biome" ]
+
+[[language]]
+name = "json"
+language-servers = [ { name = "vscode-json-language-server", except-features = [ "format" ] }, "biome" ]
+
+[[language]]
+name = "rescript"
+scope = "source.rescript"
+roots = ["rescript.json"]
+auto-format = true
+comment-token = "//"
+indent = { tab-width = 2, unit = "  " }
+
+
+[[language]]
+name = "json"
+
