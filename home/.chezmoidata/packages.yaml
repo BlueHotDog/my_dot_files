@@ -33,6 +33,7 @@ packages:
       - "taplo" #toml lsp
       - "elixir-ls" #Elixir LS
       - "ripgrep"
+      - "sd"
     casks:
       - "google-chrome"
       - "ghostty"
