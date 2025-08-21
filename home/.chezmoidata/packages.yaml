@@ -26,14 +26,13 @@ packages:
       - "glow"
       - "difftastic"
       - "fzf"
-      - "sesh"
       - "zoxide"
       - "ffmpeg"
       - "cmake"
       - "yazi"
-      - "markdown-oxide" #markdown lsp
       - "taplo" #toml lsp
       - "elixir-ls" #Elixir LS
+      - "ripgrep"
     casks:
       - "google-chrome"
       - "ghostty"
