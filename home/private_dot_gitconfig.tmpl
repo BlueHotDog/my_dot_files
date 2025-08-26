@@ -1,11 +1,9 @@
 [column]
 	ui = auto
-	
 [branch]
 	sort = -committerdate
 [tag]
 	sort = version:refname
-
 [gpg]
 	format = ssh
 [gpg "ssh"]
@@ -42,22 +40,37 @@
 
 [core]
 	excludesfile = ~/.gitignore
+    pager = delta
+
+[interactive]
+    diffFilter = delta --color-only
+
+[delta]
+    navigate = true  # use n and N to move between diff sections
+    dark = true      # or light = true, or omit for auto-detection
+
+[merge]
+    conflictStyle = zdiff3
+
 [rebase]
 	autosquash = true
 	autoStash = true
 	updateRefs = true
 [alias]
-        dft = difftool
-        dlog = "!f() { GIT_EXTERNAL_DIFF=difft git log -p --ext-diff $@; }; f"
+    dft = difftool
+    dlog = "!f() { GIT_EXTERNAL_DIFF=difft git log -p --ext-diff $@; }; f"
+    dlog = -c diff.external=difft log --ext-diff
+    dshow = -c diff.external=difft show --ext-diff
+    ddiff = -c diff.external=difft diff
 [diff]
-        tool = difftastic
-		algorithm = histogram
-		colorMoved = plain
-		mnemonicPrefix = true
-		renames = true
+    tool = difftastic
+	algorithm = histogram
+	colorMoved = plain
+	mnemonicPrefix = true
+	renames = true
 [difftool]
-        prompt = false
+    prompt = false
 [difftool "difftastic"]
-        cmd = difft "$LOCAL" "$REMOTE"
+    cmd = difft "$LOCAL" "$REMOTE"
 [pager]
-        difftool = true
+    difftool = true
