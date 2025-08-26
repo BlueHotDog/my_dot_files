@@ -34,6 +34,8 @@ packages:
       - "elixir-ls" #Elixir LS
       - "ripgrep"
       - "sd"
+      - "mkcert"
+
     casks:
       - "google-chrome"
       - "ghostty"
