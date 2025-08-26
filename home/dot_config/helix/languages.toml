@@ -8,6 +8,12 @@ required-root-patterns = ["*.ts", "*.tsx", "*.js", "*.jsx", "*.mts", "package.js
 [language-server.json]
 command = "vscode-json-languageserver"
 
+[language-server.tailwindcss-ls]
+command = "tailwindcss-language-server"
+args = ["--stdio"]
+roots = ["tailwind.config.js", "mix.exs"]
+config.tailwindCSS.includeLanguages = {heex = "html", elixir = "html"}
+
 [language-server.pyright]
 command = "pyright-langserver"
 args = ["--stdio"]
@@ -26,15 +32,17 @@ python.analysis.logLevel = "Error"
 python.analysis.typeCheckingMode = "basic"
 python.analysis.autoImportCompletion = true
 
-# [language.formatter]
-# command = "ruff"
-# args = ["format", "-"]
-
 [[language]]
 name = "elixir"
 scope = "source.elixir"
 injection-regex = "elixir"
 roots = ["mix.exs"]
+auto-format = true
+language-servers = [ "elixir-ls", "tailwindcss-ls" ]
+
+[[language]]
+name = "heex"
+language-servers = [ "elixir-ls", "tailwindcss-ls", "vscode-html-language-server" ]
 auto-format = true
 
 [[language]]
@@ -47,6 +55,13 @@ roots = ["pyproject.toml", "setup.py", "poetry.lock", "pyrightconfig.json", "req
 name = "javascript"
 language-servers = [ { name = "typescript-language-server", except-features = [ "format" ] }, "biome" ]
 auto-format = true
+
+[[language]]
+name = "html"
+language-servers = ["tailwindcss-ls", "vscode-html-language-server"]
+[[language]]
+name = "css"
+language-servers = [ "vscode-css-language-server", "tailwindcss-ls" ]
 
 [[language]]
 name="typescript"
@@ -78,7 +93,6 @@ roots = ["rescript.json"]
 auto-format = true
 comment-token = "//"
 indent = { tab-width = 2, unit = "  " }
-
 
 [[language]]
 name = "json"
