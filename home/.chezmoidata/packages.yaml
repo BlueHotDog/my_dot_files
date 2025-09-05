@@ -35,6 +35,7 @@ packages:
       - "ripgrep"
       - "sd"
       - "mkcert"
+      - "mpv"
 
     casks:
       - "google-chrome"
