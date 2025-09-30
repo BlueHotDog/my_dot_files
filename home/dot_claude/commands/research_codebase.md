@@ -156,13 +156,7 @@ Then wait for the user's research query.
      - Create permalinks: `https://github.com/{owner}/{repo}/blob/{commit}/{file}#L{line}`
    - Replace local file references with permalinks in the document
 
-8. **Sync and present findings:**
-   - Run `humanlayer thoughts sync` to sync the thoughts directory
-   - Present a concise summary of findings to the user
-   - Include key file references for easy navigation
-   - Ask if they have follow-up questions or need clarification
-
-9. **Handle follow-up questions:**
+8. **Handle follow-up questions:**
    - If the user has follow-up questions, append to the same research document
    - Update the frontmatter fields `last_updated` and `last_updated_by` to reflect the update
    - Add `last_updated_note: "Added follow-up research for [brief description]"` to frontmatter
