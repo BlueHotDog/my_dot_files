@@ -77,18 +77,7 @@ Then wait for the user's research query.
    - Highlight patterns, connections, and architectural decisions
    - Answer the user's specific questions with concrete evidence
 
-5. **Gather metadata for the research document:**
-   - Run the `hack/spec_metadata.sh` script to generate all relevant metadata
-   - Filename: `thoughts/shared/research/YYYY-MM-DD-ENG-XXXX-description.md`
-     - Format: `YYYY-MM-DD-ENG-XXXX-description.md` where:
-       - YYYY-MM-DD is today's date
-       - ENG-XXXX is the ticket number (omit if no ticket)
-       - description is a brief kebab-case description of the research topic
-     - Examples:
-       - With ticket: `2025-01-08-ENG-1478-parent-child-tracking.md`
-       - Without ticket: `2025-01-08-authentication-flow.md`
-
-6. **Generate research document:**
+5. **Generate research document:**
    - Use the metadata gathered in step 4
    - Structure the document with YAML frontmatter followed by content:
      ```markdown
@@ -149,14 +138,14 @@ Then wait for the user's research query.
      [Any areas that need further investigation]
      ```
 
-7. **Add GitHub permalinks (if applicable):**
+6. **Add GitHub permalinks (if applicable):**
    - Check if on main branch or if commit is pushed: `git branch --show-current` and `git status`
    - If on main/master or pushed, generate GitHub permalinks:
      - Get repo info: `gh repo view --json owner,name`
      - Create permalinks: `https://github.com/{owner}/{repo}/blob/{commit}/{file}#L{line}`
    - Replace local file references with permalinks in the document
 
-8. **Handle follow-up questions:**
+7. **Handle follow-up questions:**
    - If the user has follow-up questions, append to the same research document
    - Update the frontmatter fields `last_updated` and `last_updated_by` to reflect the update
    - Add `last_updated_note: "Added follow-up research for [brief description]"` to frontmatter
