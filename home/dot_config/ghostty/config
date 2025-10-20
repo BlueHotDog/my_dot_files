@@ -3,22 +3,18 @@ bold-is-bright = true
 cursor-style = block
 
 # Merges titlebar with contents
-macos-titlebar-style = native
-macos-titlebar-style = transparent
+macos-titlebar-style = tabs
 
 # WINDOW SETTINGS
 window-height = 150
 window-decoration = none
 window-width = 150
-window-padding-x = 12
-window-padding-y = 10
-window-padding-balance = false
-window-padding-color = extend
-window-inherit-working-directory = false
-
-# Add some nice looking padding
 window-padding-x = 8
 window-padding-y = 0
+window-padding-balance = false
+window-padding-color = background
+window-step-resize = true
+window-inherit-working-directory = false
 
 # Don't hang around
 quit-after-last-window-closed = false
@@ -38,7 +34,7 @@ font-family = GeistMono NFM Light
 font-thicken = true
 font-feature = +liga
 adjust-cell-width = 0%
-adjust-cell-height = -2%
+adjust-cell-height = 0%
 
 # CLIPBOARD INTEGRATIONS
 clipboard-read = allow
@@ -59,7 +55,6 @@ cursor-click-to-move = true
 macos-option-as-alt = true
 confirm-close-surface = false
 link-url = true
-macos-titlebar-style = tabs
 
 # SHELL INTEGRATION
 shell-integration = fish
