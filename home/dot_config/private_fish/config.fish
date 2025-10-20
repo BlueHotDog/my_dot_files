@@ -17,18 +17,20 @@ if status is-interactive
         zoxide init fish | source
     end
 
-    set fish_tmux_autostart true
-
     # Set greeting to neofetch
     function fish_greeting
         fastfetch
     end
 end
+
+ulimit -S -n 2048
 set -Ux EDITOR hx
+
+set -Ux MIX_OS_DEPS_COMPILE_PARTITION_COUNT (math (sysctl -n hw.physicalcpu) / 2)
+
 # Added by OrbStack: command-line tools and integration
 # This won't be added again if you remove it.
 source ~/.orbstack/shell/init2.fish 2>/dev/null || :
 
-# Created by `pipx` on 2025-03-23 13:09:29
-set -gx PATH $PATH /Users/danni/.local/bin
-set -gx COMPOSE_X_NO_UI 1
+alias claude="/Users/danni/.claude/local/claude"
+fish_add_path $HOME/.local/bin

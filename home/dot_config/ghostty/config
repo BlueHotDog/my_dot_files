@@ -18,7 +18,7 @@ window-inherit-working-directory = false
 
 # Add some nice looking padding
 window-padding-x = 8
-window-padding-y = 0,2
+window-padding-y = 0
 
 # Don't hang around
 quit-after-last-window-closed = false
@@ -27,7 +27,7 @@ quit-after-last-window-closed = false
 term = xterm-256color
 
 # The theme I liked the most from the `ghostty +list-themes`
-theme = Monokai Remastered
+theme = Kanagawa Wave
 
 keybind = global:cmd+grave_accent=toggle_quick_terminal
 
@@ -37,8 +37,8 @@ font-size = 15
 font-family = GeistMono NFM Light
 font-thicken = true
 font-feature = +liga
-adjust-cell-width = -3%
-adjust-cell-height = -5%
+adjust-cell-width = 0%
+adjust-cell-height = -2%
 
 # CLIPBOARD INTEGRATIONS
 clipboard-read = allow

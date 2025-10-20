@@ -1,0 +1,15 @@
+# /Users/danni/.config/tmuxinator/storyfern.yml
+
+name: storyfern
+root: ~/dev/storyfern
+
+startup_window: helix
+
+windows:
+  - helix:
+      panes:
+        - hx .
+  - split-shell:
+      layout: even-horizontal
+      panes:
+        - 

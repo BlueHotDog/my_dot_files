@@ -1,0 +1,5 @@
+# Ignore Karabiner automatic backups
+.config/karabiner/automatic_backups/
+
+# Ignore Yazi backup files (timestamped)
+.config/yazi/*.toml-*
